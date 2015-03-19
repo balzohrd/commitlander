@@ -1,0 +1,18 @@
+{
+  "name":"commitlander",
+  "main":"bin/commitlander",
+  "version":"0.1.02",
+  "keywords":"Git, Zoolander, Funny",
+  "description":"Simple CLI that displays horrible workflow practices using zoolander quotes",
+   "author": [
+    { "name" : "Austin Turnage", "email" : "austin@datarats.com", "url" : "http://austinturnage.com"  },
+    { "name" : "Gal Azencot", "email" : "gal@dng.io", "url" : "http://dng.io" }
+  ],
+  "bin": {
+    "commitlander":"./bin/commitlander"
+  },
+  "repository":{
+    "type":"git",
+    "url":"git@github.com:wookiecooking/commitlander.git"
+  }
+}

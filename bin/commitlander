@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+var quotes = require('../lib/quotes'),
+shell = require('child_process').spawn('bash');
+
+function commitlander() {
+  var quote = quotes[Math.floor(Math.random() * quotes.length)];
+  shell.stdin.write('git commit -m "'+quote+'"')
+  shell.stdout.on('data', function(data) { console.log('commited: %s', quote) })
+  shell.stdin.end();
+};
+
+commitlander();

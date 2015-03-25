@@ -1,7 +1,7 @@
 {
   "name":"commitlander",
   "main":"bin/commitlander",
-  "version":"0.1.02",
+  "version":"1.0.0",
   "keywords":"Git, Zoolander, Funny",
   "description":"Simple CLI that displays horrible workflow practices using zoolander quotes",
    "author": [

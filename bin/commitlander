@@ -1,13 +1,34 @@
 #!/usr/bin/env node
 
-var quotes = require('../lib/quotes');
-var shell = require('child_process').spawn('bash');
+/**
+ * Commitlander
+*/
 
-function commitlander() {
+var shell = require('child_process').spawn('bash');
+var commander = require('commander');
+var pkg = require('./package.json')
+
+var quotes = require('../lib/zoolander');
+
+commander
+  .version(pkg.version)
+  .option('-z, --zoolander', 'Zoolander Quote')
+  .option('-h, --hal', 'Hal Quotes')
+  .option('-m, --marvin', 'Marvin Quotes')
+  .option('-t, --tbp [type]', 'Trailer Park Boys [ricky]', 'ricky')
+  .parse(process.argv);
+
+if (commander.zoolander) console.log(' Zoolander Quotes ');
+if (commander.hal) console.log('Hal Quotes');
+if (commander.marvin) console.log('Marvin Quotes');
+if (commander.tbp) console.log('%s From Trailer Park Boys ', commander.tbp);
+
+
+function commitlander(quotes) {
   var quote = quotes[Math.floor(Math.random() * quotes.length)];
   shell.stdin.write('git commit -m "'+quote+'"')
   shell.stdout.on('data', function(data) { console.log('commited: %s', quote) })
   shell.stdin.end();
 };
 
-commitlander();
+commitlander(quotes);

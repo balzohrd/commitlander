@@ -8,7 +8,7 @@ var shell = require('child_process').spawn('bash');
 var commander = require('commander');
 var pkg = require('./package.json')
 
-var quotes = require('../lib/zoolander');
+var quotes = require('../quotes/zoolander');
 
 commander
   .version(pkg.version)

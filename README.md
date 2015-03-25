@@ -1,5 +1,7 @@
 # Commitlander
 
+# [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![NPM Downloads][npm-downloads]][npm-url]
+
 Simple CLI that displays horrible workflow practices using zoolander quotes
 
 ![Zoolander](https://raw.github.com/wookiecooking/commitlander/master/zoolander.jpg)
@@ -68,3 +70,9 @@ Doesn't work on anything that doesn't have bash. Windows users encouraged to fix
   0. You just DO WHAT THE FUCK YOU WANT TO.
 
 ```
+
+[npm-downloads]: https://img.shields.io/npm/dm/commitlander.svg
+[npm-image]: https://badge.fury.io/js/commitlander.svg
+[npm-url]: https://npmjs.org/package/commitlander
+[travis-image]: https://travis-ci.org/wookiecooking/commitlander.svg?branch=master
+[travis-url]: https://travis-ci.org/wookiecooking/commitlander

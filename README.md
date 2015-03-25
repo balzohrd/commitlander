@@ -1,5 +1,7 @@
 # Commitlander
 
+[![Join the chat at https://gitter.im/wookiecooking/commitlander](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/wookiecooking/commitlander?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 # [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![NPM Downloads][npm-downloads]][npm-url]
 
 Simple CLI that displays horrible workflow practices using zoolander quotes

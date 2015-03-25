@@ -1,4 +1,4 @@
-# Commitlander
+# Commitlander 2.0 ALPHA
 
 # [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![NPM Downloads][npm-downloads]][npm-url]
 

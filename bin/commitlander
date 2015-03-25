@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-var quotes = require('../lib/quotes'),
-shell = require('child_process').spawn('bash');
+var quotes = require('../lib/quotes');
+var shell = require('child_process').spawn('bash');
 
 function commitlander() {
   var quote = quotes[Math.floor(Math.random() * quotes.length)];
